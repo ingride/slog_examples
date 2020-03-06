@@ -1,2 +1,0 @@
-{"msg":"worker failed","level":"ERRO","ts":"2020-03-06T14:12:43.000437+00:00","port":8080,"host":"localhost","version":"0.1.0","worker_id":1}
-{"msg":"server can't continue to work","level":"CRIT","ts":"2020-03-06T14:12:43.000734+00:00","port":8080,"host":"localhost","version":"0.1.0"}

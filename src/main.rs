@@ -16,7 +16,7 @@ fn main() {
     common::simulate_server(log);
     */
 
-    let log_path = "app.log";
+    let log_path = "test.log";
     let file = OpenOptions::new()
         .create(true)
         .write(true)
