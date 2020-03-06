@@ -15,6 +15,28 @@ version: 0.1.0
    Mar 06 14:14:04.652 CRIT server can't continue to work
 ```
 
+# console with custom serializer
+
+```
+starting port=8080 host=test-server-2 build-id=7.3.3-abcdef
+ listening port=8080 host=test-server-2 build-id=7.3.3-abcdef
+ connected port=42381 peer_addr=82.9.9.9 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+version message received length=2 port=42381 peer_addr=82.9.9.9 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+: connected port=18230 peer_addr=8.8.8.8 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+  weak encryption requested algo=xor port=42381 peer_addr=82.9.9.9 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+0.1.0
+ response sent length=8 port=42381 peer_addr=82.9.9.9 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+  disconnected port=42381 peer_addr=82.9.9.9 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+host:  message received length=2 port=18230 peer_addr=8.8.8.8 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+localhost
+ response sent length=8 port=18230 peer_addr=8.8.8.8 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+  port disconnected port=18230 peer_addr=8.8.8.8 port=8080 host=test-server-2 build-id=7.3.3-abcdef
+ internal error port=8080 host=test-server-2 build-id=7.3.3-abcdef
+ exit port=8080 host=test-server-2 build-id=7.3.3-abcdef
+: 8080
+
+```
+
 # file
 
 ```

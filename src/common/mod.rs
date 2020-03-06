@@ -5,7 +5,7 @@ pub struct PrintlnSerializer;
 
 impl Serializer for PrintlnSerializer {
     fn emit_arguments(&mut self, key: Key, val: &fmt::Arguments) -> Result {
-        print!(", {}={}", key, val);
+        print!(" {}={}", key, val);
         Ok(())
     }
 }
@@ -22,7 +22,7 @@ impl Drain for PrintlnDrain {
         values: &OwnedKVList,
     ) -> result::Result<Self::Ok, Self::Err> {
 
-        print!("{}", record.msg());
+        print!(" {}", record.msg());
 
         record
             .kv()
@@ -45,7 +45,7 @@ pub fn simulate_server(log: Logger) {
     debug!(peer2, "connected");
     debug!(peer2, "message received"; "length" => 2);
     debug!(peer1, "connected");
-    warn!(peer2, "weak encryption requested"; "algo" => "xor");
+    warn!(peer2,  "weak encryption requested"; "algo" => "xor");
     debug!(peer2, "response sent"; "length" => 8);
     debug!(peer2, "disconnected");
     debug!(peer1, "message received"; "length" => 2);
