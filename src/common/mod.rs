@@ -5,7 +5,7 @@ pub struct PrintlnSerializer;
 
 impl Serializer for PrintlnSerializer {
     fn emit_arguments(&mut self, key: Key, val: &fmt::Arguments) -> Result {
-        print!(" {}={}", key, val);
+        print!("{}={} ", key, val);
         Ok(())
     }
 }
@@ -22,7 +22,7 @@ impl Drain for PrintlnDrain {
         values: &OwnedKVList,
     ) -> result::Result<Self::Ok, Self::Err> {
 
-        print!(" {}", record.msg());
+        print!("{} ", record.msg());
 
         record
             .kv()
