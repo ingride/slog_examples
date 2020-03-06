@@ -1,0 +1,11 @@
+[package]
+name = "test-slog"
+version = "0.1.0"
+authors = ["ingride"]
+edition = "2018"
+
+[dependencies]
+slog = "2.4"
+slog-async = "2.3"
+slog-json = "2.3"
+slog-term = "2.4"
