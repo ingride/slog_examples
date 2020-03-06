@@ -6,16 +6,6 @@ use std::fs::OpenOptions;
 use std::sync::Mutex;
 
 fn main() {
-    /*
-    let decorator = slog_term::PlainDecorator::new(std::io::stdout());
-    let drain = slog_term::CompactFormat::new(decorator).build().fuse();
-    let drain = slog_async::Async::new(drain).build().fuse();
-
-    let log = slog::Logger::root(drain, o!("version" => "0.5"));
-
-    common::simulate_server(log);
-    */
-
     let log_path = "test.log";
     let file = OpenOptions::new()
         .create(true)
