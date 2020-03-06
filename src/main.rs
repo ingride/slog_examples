@@ -39,6 +39,10 @@ fn main() {
     error!(log, "worker failed"; "worker_id" => 1);
     crit!(log, "server can't continue to work");
 
-    common::simulate_server(log);
+    let log2 = slog::Logger::root(
+        slog::Fuse(common::PrintlnDrain),
+        slog::o!("build-id" => "7.3.3-abcdef"),
+    );
+    common::simulate_server(log2);
 
 }
