@@ -1,7 +1,7 @@
 use slog::*;
 
 pub fn simulate_server(log: Logger) {
-    let server = log.new(o!("host" => "localhost", "port" => "8080"));
+    let server = log.new(o!("host" => "test-server-2", "port" => "8080"));
     let peer1 = server.new(o!("peer_addr" => "8.8.8.8", "port" => "18230"));
     let peer2 = server.new(o!("peer_addr" => "82.9.9.9", "port" => "42381"));
 
