@@ -1,4 +1,9 @@
-{"msg":"Starting request","level":"INFO","ts":"2020-03-06T14:21:31.440429+00:00","port":8080,"host":"localhost","version":"0.1.0","dur":1.2,"path":"/","ip":"127.0.0.1"}
-{"msg":"processing files","level":"INFO","ts":"2020-03-06T14:21:31.440836+00:00","port":8080,"host":"localhost","version":"0.1.0","number_of_files":12467,"worker_pool":25}
-{"msg":"worker failed","level":"ERRO","ts":"2020-03-06T14:21:31.441139+00:00","port":8080,"host":"localhost","version":"0.1.0","worker_id":1}
-{"msg":"server can't continue to work","level":"CRIT","ts":"2020-03-06T14:21:31.441411+00:00","port":8080,"host":"localhost","version":"0.1.0"}
+{"msg":"Starting request","level":"INFO","ts":"2020-03-06T14:25:11.519258+00:00","port":8080,"host":"localhost","version":"0.1.0","dur":1.2,"path":"/","ip":"127.0.0.1"}
+{"msg":"processing files","level":"INFO","ts":"2020-03-06T14:25:11.519552+00:00","port":8080,"host":"localhost","version":"0.1.0","number_of_files":12467,"worker_pool":25}
+{"msg":"worker failed","level":"ERRO","ts":"2020-03-06T14:25:11.519767+00:00","port":8080,"host":"localhost","version":"0.1.0","worker_id":1}
+{"msg":"server can't continue to work","level":"CRIT","ts":"2020-03-06T14:25:11.519958+00:00","port":8080,"host":"localhost","version":"0.1.0"}
+{"msg":"starting","level":"INFO","ts":"2020-03-06T14:25:11.520130+00:00","port":"8080","host":"localhost","port":8080,"host":"localhost","version":"0.1.0"}
+{"msg":"listening","level":"INFO","ts":"2020-03-06T14:25:11.520361+00:00","port":"8080","host":"localhost","port":8080,"host":"localhost","version":"0.1.0"}
+{"msg":"weak encryption requested","level":"WARN","ts":"2020-03-06T14:25:11.520752+00:00","port":"42381","peer_addr":"82.9.9.9","port":"8080","host":"localhost","port":8080,"host":"localhost","version":"0.1.0","algo":"xor"}
+{"msg":"internal error","level":"CRIT","ts":"2020-03-06T14:25:11.521306+00:00","port":"8080","host":"localhost","port":8080,"host":"localhost","version":"0.1.0"}
+{"msg":"exit","level":"INFO","ts":"2020-03-06T14:25:11.521519+00:00","port":"8080","host":"localhost","port":8080,"host":"localhost","version":"0.1.0"}

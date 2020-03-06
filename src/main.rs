@@ -5,6 +5,8 @@ use slog_json::Json;
 use std::fs::OpenOptions;
 use std::sync::Mutex;
 
+mod common;
+
 fn main() {
     let log_path = "test.log";
     let file = OpenOptions::new()
@@ -36,5 +38,7 @@ fn main() {
     info!(log,  "processing files"; "worker_pool" => 25, "number_of_files" => 12467);
     error!(log, "worker failed"; "worker_id" => 1);
     crit!(log, "server can't continue to work");
+
+    common::simulate_server(log);
 
 }
