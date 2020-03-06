@@ -15,7 +15,7 @@ fn main() {
         .unwrap();
 
     let drain = Mutex::new(Json::default(file)).fuse();
-    let file_drain = LevelFilter::new(drain, Level::Error);
+    let file_drain = LevelFilter::new(drain, Level::Info);
 
     let decorator = PlainDecorator::new(std::io::stderr());
     let err_drain = CompactFormat::new(decorator).build().fuse();
@@ -32,7 +32,7 @@ fn main() {
 
     debug!(log, "started");
     debug!(log, "{} workers", 2;);
-    debug!(log, "request"; "from" => "example.com");
+    info!(log, "Starting request"; "ip" => "127.0.0.1", "path" => "/", "dur" => 1.2);
     info!(log,  "processing files"; "worker_pool" => 25, "number_of_files" => 12467);
     error!(log, "worker failed"; "worker_id" => 1);
     crit!(log, "server can't continue to work");

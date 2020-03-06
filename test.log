@@ -1,2 +1,4 @@
-{"msg":"worker failed","level":"ERRO","ts":"2020-03-06T14:14:04.651867+00:00","port":8080,"host":"localhost","version":"0.1.0","worker_id":1}
-{"msg":"server can't continue to work","level":"CRIT","ts":"2020-03-06T14:14:04.652198+00:00","port":8080,"host":"localhost","version":"0.1.0"}
+{"msg":"Starting request","level":"INFO","ts":"2020-03-06T14:21:31.440429+00:00","port":8080,"host":"localhost","version":"0.1.0","dur":1.2,"path":"/","ip":"127.0.0.1"}
+{"msg":"processing files","level":"INFO","ts":"2020-03-06T14:21:31.440836+00:00","port":8080,"host":"localhost","version":"0.1.0","number_of_files":12467,"worker_pool":25}
+{"msg":"worker failed","level":"ERRO","ts":"2020-03-06T14:21:31.441139+00:00","port":8080,"host":"localhost","version":"0.1.0","worker_id":1}
+{"msg":"server can't continue to work","level":"CRIT","ts":"2020-03-06T14:21:31.441411+00:00","port":8080,"host":"localhost","version":"0.1.0"}
